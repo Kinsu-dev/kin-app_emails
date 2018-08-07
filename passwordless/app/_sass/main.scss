@@ -1,0 +1,37 @@
+// Comment and uncomment,
+// the Less files that you need for your css
+// default styles used on your Modules
+@import 'commun/config';
+
+// Styles used on your Modules
+// costum styles used on New theme
+//@import 'new/variable';
+
+// Main scss styles
+@import 'commun/_function';
+@import 'commun/_type';
+@import 'commun/_responsive';
+@import 'commun/_normalizer';
+@import 'commun/_layout';
+@import 'commun/_other';
+
+// Partials templating
+@import 'partials/_article';
+@import 'partials/_disclaimer';
+@import 'partials/_quotes';
+@import 'partials/_author';
+@import 'partials/_buttons';
+@import 'partials/_bullet-text';
+@import 'partials/_double-column';
+@import 'partials/_triple-column';
+@import 'partials/_double_col-3_rows';
+@import 'partials/_four-col_devided';
+@import 'partials/_footers';
+@import 'partials/_image--hero';
+@import 'partials/_product-list';
+@import 'partials/_program-list';
+@import 'partials/_schedual';
+@import 'partials/_signature';
+@import 'partials/_spacer';
+@import 'partials/_three-column';
+@import 'partials/_webview';

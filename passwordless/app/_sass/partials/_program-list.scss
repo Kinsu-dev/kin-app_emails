@@ -1,0 +1,79 @@
+.program-list {
+
+	max-width: $main-width;
+	background-color: $secondary-base;
+
+	p {
+
+		margin-top: 1.35em;
+	}
+
+	.main-wrap {
+    $mainWrap: $main-max-width - 0;
+    $width: (($mainWrap * 100) / $main-width)+0%;
+    //change the width percentage on table
+    // unit((540 * 100) / 600)+0% = 90%
+    width: $width;
+    max-width: $mainWrap;
+		background-color: $primary-base; // $fith-bgcolor;
+
+		a, p {
+
+			font-family: $font;
+			font-size: 16px;
+			color: $primary-color-text;
+
+			strong {
+
+				font-family: inherit;
+				font-size: inherit;
+				color: inherit;
+			}
+		}
+
+		span {
+
+			font-size: 15px;
+			color: $primary-color-text; // $fith-color;
+			display: inline-block;
+		}
+
+		a, img {
+
+			text-decoration: none;
+		}
+	}
+
+	.inner-wrap {
+
+		min-width: 194px;
+		max-width: $main-max-width;
+
+		td {
+
+			vertical-align: middle;
+		}
+	}
+
+	.headerimg {
+
+		width: 100%;
+		max-width: $main-max-width;
+	}
+
+	.btn-fixed {
+
+		min-width: 48px;
+		max-width: 58px;
+	}
+
+	.lightgreybg {
+
+		background-color: #E6E6E6;
+	}
+
+	.darkgreybg {
+
+		background-color: #D2D2D2;
+	}
+}
