@@ -1,0 +1,51 @@
+/* -------------------------------------
+		Typography
+------------------------------------- */
+
+$font: 'Open Sans', Arial, Helvetica, sans-serif;
+$arial: Arial, Helvetica, sans-serif;
+$georgia: Georgia, Helvetica, sans-serif;
+
+html {
+	@include rem-baseline;
+}
+
+h1, h2, h3 {
+	font-family: $font;
+	color: $primary-color-text;
+	font-weight: bold;
+}
+
+h1 {
+	@include rem(font-size, 32px);
+	@include rem(line-height, 40px);
+	@include rem(margin-bottom, 32px);
+	font-weight: 500;
+}
+
+h2 {
+	@include rem(font-size, 24px);
+	@include rem(line-height, 30px);
+	@include rem(margin-bottom, 24px);
+}
+
+h3 {
+	@include rem(font-size, 18px);
+	@include rem(line-height, 24px);
+	@include rem(margin-bottom, 18px);
+}
+
+h4 {
+	@include rem(font-size, 16px);
+	@include rem(line-height, 22px);
+	@include rem(margin-bottom, 16px);
+}
+
+p {
+	font-family: $font;
+	@include rem(font-size, 16px);
+	@include rem(line-height, 22px);
+	@include rem(margin-bottom, 16px);
+	color: $primary-color-text;
+	font-weight: normal;
+}

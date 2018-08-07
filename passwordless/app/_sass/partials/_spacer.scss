@@ -1,0 +1,56 @@
+.spacer {
+  max-width: $main-width;
+  background-color: $secondary-base;
+
+  &.bs-color {
+    background-color: $primary-base;
+  }
+
+  .main {
+    &-wrap {
+      $mainWrap: $main-max-width + 60;
+      $width: (($mainWrap * 100) / $main-width)+0%;
+      //change the width percentage on table
+      // unit((540 * 100) / 600)+0% = 90%
+      width: $width;
+      max-width: $mainWrap;
+      background-color: $secondary-base;
+
+      img[src^="/images/spacer.gif"],
+      td {
+        width: 100%;
+        max-width: 600px;
+        height: 20px;
+        max-height: 20px;
+        min-height: 20px;
+        line-height: 20px;
+        font-size: 20px;
+      }
+
+      /* use this class to make first and last spacer */
+      &.bs-color {
+        background-color: $primary-base;
+      }
+
+      &.theme-base {
+        background-color: $theme-base;
+      }
+
+      $class-slug: spacer !default;
+
+      @for $i from 1 through 20 {
+        &.#{$class-slug}-#{$i} {
+          td {
+            width: $width;
+            max-width: $mainWrap;
+            height: ($i+px);
+            max-height: ($i+px);
+            min-height: ($i+px);
+            line-height: ($i+px);
+            font-size: ($i+px);
+          }
+        }
+      }
+    }
+  }
+}

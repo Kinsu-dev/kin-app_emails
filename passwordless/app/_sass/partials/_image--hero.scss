@@ -1,0 +1,140 @@
+.full-width-img {
+	max-width: $main-width;
+	//background-color: $secondary-base;
+
+	.main-wrap {
+    $mainWrap: $main-max-width - 0;
+    $width: (($mainWrap * 100) / $main-width)+0%;
+    //change the width percentage on table
+    // unit((540 * 100) / 600)+0% = 90%
+    width: $width;
+    max-width: $mainWrap;
+
+		.img-wrap {
+			margin: 0 auto; // IOS fix align center.
+		}
+
+		&.header {
+			img {
+				width: 100%;
+				max-width: 600px;
+				max-height: 800px;
+			}
+		}
+
+		&.sig {
+			img {
+				width: 100%;
+				max-width: 600px;
+				max-height: 137px;
+			}
+		}
+
+		&.centered {
+			background-color: $secondary-base;
+
+			.img-wrap {
+				min-width: 260px;
+			}
+
+			img {
+				width: 100%;
+				max-width: 260px;
+				min-width: 260px;
+				max-height: 246px;
+			}
+		}
+
+		&.logo {
+			background-color: $secondary-base;
+
+			.img-wrap {
+				max-width: 310px;
+			}
+
+			img {
+				width: 100%;
+				max-width: 310px;
+				min-width: 310px;
+				max-height: 164px;
+			}
+		}
+
+		.slogan {
+			text-align: center;
+			margin: 0 auto;
+
+			p {
+				font-family: $font;
+				font-size: 45px;
+				color: white;
+			}
+		}
+
+		.btn-wrap {
+			text-align: center;
+			margin: 0 auto;
+		}
+
+		.btn {
+			margin-bottom: 35px;
+		}
+	}
+
+	.caption-wrap {
+		/* Normal text costomization */
+		a, p {
+			font-family: $font;
+			font-size: 16px;
+			color: $primary-color-text;
+
+
+			span {
+				color: $theme-color-text;
+				font-size: 16px;
+			}
+
+			&.blue-theme__color {
+				font-size: 20px;
+				color: $theme-2nd-color-text;
+			}
+		}
+
+		/* U tag, is for mark to be recognize by Gmail */
+		mark, u {
+			background-color: $theme-color-text;
+			text-decoration: none;
+		}
+
+		a {
+			color: $theme-color-text;
+			text-decoration: none;
+			border-bottom: 1px solid;
+
+			&[href^="tel:"] {
+				color: $primary-color-text;
+				text-decoration: none;
+				border-bottom: 0;
+			}
+		}
+	}
+
+	.textOverImage {
+		// reset margins
+		p {
+			margin: 0;
+		}
+
+		.text-table {
+			width: 90%;
+			max-width: $main-max-width;
+
+			p {
+				font-family: $font;
+				font-size: 16px;
+				line-height: 1.35;
+				color: white;
+			}
+		}
+	}
+}
