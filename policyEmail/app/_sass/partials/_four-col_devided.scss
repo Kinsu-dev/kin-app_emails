@@ -1,0 +1,88 @@
+.four-col-n-text {
+
+	background-color: $secondary-base;
+
+	img[src^="/images/spacer.gif"] {
+
+		height: 10px;
+		max-height: 10px;
+		width: 0.1px;
+		max-width: 0.1px;
+	}
+
+	.main-wrap {
+    $mainWrap: $main-max-width - 0;
+    $width: (($mainWrap * 100) / $main-width)+0%;
+    //change the width percentage on table
+    // unit((540 * 100) / 600)+0% = 90%
+    width: $width;
+    max-width: $mainWrap;
+		background-color: $secondary-base;
+
+		p {
+
+			font-family: $font;
+			font-size: 30px;
+			color: $primary-color-text;
+
+			span {
+
+				color: $theme-color-text;
+			}
+		}
+	}
+
+	.four-col-container {
+
+		background-color: $secondary-base;
+		text-align: center;
+		display: inline;
+
+		.theme-base {
+
+			background-color: $lighten-theme-base;
+		}
+
+		tr:last-child {
+			table {
+				border-top: 3px solid #fff;
+			}
+		}
+
+		table {
+			td {
+				width: 148px;
+				max-width: 148px;
+				min-width: 148px;
+			}
+		}
+
+		font {
+			font-family: $font;
+			font-size: 16px;
+			color: $third-color-text;
+		}
+
+		font > a {
+			font-size: 10px;
+			font-family: $font;
+			color: $primary-color-text;
+			text-decoration: none;
+		}
+
+		span {
+
+			font-family: $font;
+			font-size: 16px;
+			color: $theme-color-text;
+		}
+
+		span > a[href^="tel:"], a {
+
+			font-size: 15px;
+			font-family: $font;
+			color: $theme-2nd-color-text;
+			text-decoration: none;
+		}
+	}
+}

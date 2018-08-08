@@ -1,0 +1,19 @@
+.author {
+
+	.main-wrap {
+    $mainWrap: $main-max-width + 30;
+    $width: (($mainWrap * 100) / $main-width)+0%;
+    //change the width percentage on table
+    // unit((540 * 100) / 600)+0% = 90%
+    width: $width;
+    max-width: $mainWrap;
+		background-color: $secondary-base;
+
+		a, p, strong {
+
+			font-size: 13px;
+			line-height: 14px;
+			text-align: right;
+		}
+	}
+}
