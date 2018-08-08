@@ -1,0 +1,68 @@
+.duble-column__rows {
+
+	background-color: $secondary-base;
+
+	.main-wrap {
+    $mainWrap: $main-max-width - 0;
+    $width: (($mainWrap * 100) / $main-width)+0%;
+    //change the width percentage on table
+    // unit((540 * 100) / 600)+0% = 90%
+    width: $width;
+    max-width: $mainWrap;
+		background-color: $secondary-base;
+
+		p {
+
+			font-family: $font;
+			font-size: 16px;
+			color: $primary-color-text;
+
+			span {
+
+				color: $theme-color-text;
+			}
+		}
+	}
+
+	.duble-container__rows {
+
+		background-color: $secondary-base;
+		text-align: center;
+
+		.theme-base {
+			background-color: $lighten-theme-base;
+		}
+
+		table {
+			width: 260px;
+			max-width: 260px;
+			min-width: 260px;
+			td {
+				width: 130px;
+				max-width: 130px;
+				min-width: 130px;
+			}
+		}
+
+		tr:not(:first-child),
+		tr:not(:nth-child(2)) {
+			table {
+				border-top: 3px solid #fff;
+			}
+		}
+
+		font {
+
+			font-family: $font;
+			font-size: 16px;
+			color: $third-color-text;
+		}
+
+		span {
+
+			font-family: $font;
+			font-size: 16px;
+			color: $theme-color-text;
+		}
+	}
+}
