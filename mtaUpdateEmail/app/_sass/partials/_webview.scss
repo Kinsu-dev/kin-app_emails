@@ -1,0 +1,89 @@
+.webview {
+
+  &.bs-color {
+    background-color: $primary-base;
+  }
+
+	// normal "view in web" message
+	.main-wrap {
+    $mainWrap: $main-max-width - 0;
+    $width: (($mainWrap * 100) / $main-width)+0%;
+    //change the width percentage on table
+    // unit((540 * 100) / 600)+0% = 90%
+    width: $width;
+    max-width: $mainWrap;
+		background-color: $secondary-base;
+
+    &.bs-color {
+      background-color: $primary-base;
+    }
+
+    tr {
+      &:first-of-type,
+      &:last-of-type {
+        td {
+          font-size: 10px;
+          line-height: 1;
+          height: 10px;
+        }
+      }
+    }
+
+		a, p {
+			font-size: 11px;
+		}
+
+    p {
+      padding: 0;
+    }
+
+		a {
+			color: $theme-color-text;
+			// text-decoration: underline;
+			text-decoration: none;
+			border-bottom: 1px solid;
+		}
+	}
+
+	// 230px main-wrap width gray background
+	// If the preference is aligning the main-wrap on the right or just center, 
+	// use the classes on _stylesheets folder in the other.less file to check commun classes
+	// .fleft .clear .fright
+	&.webpage {
+		td {
+			padding: 5px 0;
+		}
+
+		.main-wrap {
+			/* change the width percentage on table */
+			/* 90% = 540px  --  95% = 570px + 30px */
+			// max-width: $main-max-width;
+			background-color: #aaafc5;
+			border-radius: 3px;
+
+			td:last-child {
+				a {
+					padding: 0;
+				}
+			}
+
+			td:first-child {
+				padding: 5px 0;
+			}
+
+			a {
+				font-family: $font;
+				font-size: 12px;
+				color: #fff;
+				text-decoration: none;
+				border-bottom: 0;
+				padding: 0 8px;
+
+				img {
+					max-width: 8px;
+					padding-right: 8px;
+				}
+			}
+		}
+	}
+}
