@@ -1,0 +1,23 @@
+{{> partials / spacer classW="" class="spacer-3 theme-base" }}
+{{> partials / spacer class="spacer-30" }}
+
+{{> partials / ih
+  class="header"
+  direction="center"
+  src="appUrl + '/kinsu_email_header.gif'"
+  src="/images/kinsu_email_header.gif"
+  alt="Kinsu"
+}}
+{{> partials / spacer class="spacer-30" }}
+
+{{> partials / art
+  text='
+    <p>Hello #{user.firstName} #{user.lastName},</p>
+    <p>You’ve successfully made changes to your Kinsu policy. Your edited coverage will run until the end of the month and will then be cancelled as requested. The unchanged portion of your policy will function as usual.</p>
+    <p>Didn’t make this change?<a mailto="help@kinsu.co.uk">Contact us</a> today and we’ll get you sorted.</p>
+    <p>With kindness,<br/>Kinsu Support</p>
+    <p> Email:<a mailto="help@kinsu.co.uk">help@kinsu.co.uk</a><br/> Phone:<a tel="+44 (0) 345 241 2563">+44 (0) 345 241 2563</a></p>
+    <p>Kinsu is a trading style of Advent Solutions Management, Ltd. Advent Solutions Management, Ltd is authorised and regulated by the Financial Conduct Authority. (FCA reference number: 308751.)</p>
+	'
+}}
+{{> partials / spacer class="spacer-30" }}
