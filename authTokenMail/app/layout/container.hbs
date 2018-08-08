@@ -1,0 +1,34 @@
+{{> partials / spacer classW="" class="spacer-3 theme-base" }}
+{{> partials / spacer class="spacer-30" }}
+
+{{> partials / ih
+  class="header"
+  direction="center"
+  src="appUrl + '/kinsu_email_header.gif'"
+  src="/images/kinsu_email_header.gif"
+  alt="Kinsu"
+}}
+{{> partials / spacer class="spacer-30" }}
+
+{{> partials / art
+  text='
+		<p>The following link is to set your password in your first login</p>
+    <p>This link is valid until #{new Date(user.tokenExpirationDate).toUTCString()}</p>
+	'
+}}
+{{> partials / spacer class="spacer-30" }}
+
+{{> partials / btn
+  btnType="btn-primary"
+  title="Click here"
+  direction="center"
+  href="appUrl + '/bo/resetpass/' + user.authToken"
+}}
+{{> partials / spacer class="spacer-30" }}
+
+{{> partials / art
+  text='
+		<p>With kindness,<br>Kinsu Support</p>
+	'
+}}
+{{> partials / spacer class="spacer-30" }}
