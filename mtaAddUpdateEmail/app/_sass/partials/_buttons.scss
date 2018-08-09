@@ -46,14 +46,14 @@
   > a {
     color: #ffffff;
     font-family: $font;
-    font-size: 16px;
-    line-height: 22px;
-    padding: 10px 20px;
-    //@include rem(font-size, 16px);
-    //@include rem(line-height, 22px);
-    //@include rem((
-    //	padding: 10px 20px
-    //));
+    //font-size: 16px;
+    //line-height: 22px;
+    //padding: 10px 20px;
+    @include em(font-size, 16px);
+    @include em(line-height, 22px);
+    @include em((
+    	padding: 10px 20px
+    ));
     font-style: normal;
     font-weight: normal;
     text-align: center;
