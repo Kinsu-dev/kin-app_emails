@@ -12,10 +12,10 @@
 
 {{> partials / art
   text='
-		<p>Hello #{user.firstName} #{user.lastName},</p>
-		<p>Click and confirm that you want to sign in to Kinsu.<br>
-		This link will expire after used.</p>
-	'
+    <p>Hello <span style="text-transform: capitalize; color: inherit;">#{user.firstName} #{user.lastName}</span>,</p>
+    <p>Click and confirm that you want to sign in to Kinsu.<br>
+    This link will expire #{user.tokenExpirationDate}</p>
+  '
 }}
 {{> partials / spacer class="spacer-30" }}
 
